@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aloha</title>
+    <title>Aloha Apparel Co.</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -36,82 +36,112 @@
                 <h3 class="springsummer">Spring/Summer 2016</h3>
             </div>
         </section>
-        <section class="container">
-            <h2>Hand-Crafter Styles</h2>
+        <section class="container hand-craft">
+            <h2><span class="hand-crafted-word">Hand-Crafted</span><span class="styles-word"> Styles</span></h2>
             <p>Aloha Apparel CO. sells only the finest ready-to-travel clothing. Browse our current selection of
                 products or sign up for updates below.</p>
         </section>
-        <section class="container">
-            <div>
-                <img src="images/mens-category.jpg">
-                <h3></h3>
+        <section class="container category-container">
+            <div class="mens-category category-item">
+                <h3 class="mens-text">Men's</h3>
             </div>
-            <div>
-                <img src="images/trends-category.jpg">
-                <h3></h3>
+            <div class="trends-category category-item">
+                <h3 class="trends-text">Trends</h3>
             </div>
-            <div>
-                <img src="images/glasses-category.jpg">
-                <h3></h3>
+            <div class="glasses-category category-item">
+                <h3 class="glasses-text">Glasses</h3>
             </div>
-            <div>
-                <img src="images/sale-category.jpg">
-                <h3></h3>
+            <div class="sales-category category-item">
+                <h3 class="sales-text">Sales</h3>
             </div>
-            <div>
-                <img src="images/bags-category.jpg">
-                <h3></h3>
+
+            <div class="bags-category category-item">
+                <h3 class="bags-text">Bags</h3>
             </div>
-            <div>
-                <img src="images/womens-category.jpg">
-                <h3></h3>
+
+            <div class="womens-category category-item">
+                <h3 class="womens-text">Women's</h3>
             </div>
+
         </section>
-        <section class="container">
-            <h2>Most loved products</h2>
-            <ul>
-                <li><img src="images/checked-stretch-dress.jpg"></li>
-                <li><img src="images/blue-hipster-backpack.jpg">
-                <li>
-                <li><img src="images/demin-overall-shorts.jpg"></li>
-                <li><img src="images/pink-dotted-dress.jpg"></li>
-                <li><img src="images/blue-silk-dress.jpg"></li>
-                <li><img src="images/stretch-knit-dress.jpg"></li>
-                <li><img src="images/cotton-blue-shirt.jpg"></li>
-            </ul>
+
+        <section class="container carousel">
+            <h2><span class="most-loved">Most loved </span>Products</h2>
+            <nav>
+                <ul class="carousel-list">
+                    <li class="checked-dress carousel-item">
+                        <img src="images/checked-stretch-dress.jpg">
+                        <p>DRESSES</p>
+                        <h2>Checked Stretch Dress</h2>
+                        <p>$129.00</p>
+                    </li>
+                    <li class="backpack carousel-item">
+                        <img src="images/blue-hipster-backpack.jpg">
+                        <p>BAGS</p>
+                        <h2>Blue Hipster Backpack</h2>
+                        <p>$69.00</p>
+                    </li>
+                    <li class="overalls carousel-item">
+                        <img src="images/demin-overall-shorts.jpg">
+                        <p>DENIM</p>
+                        <h2>Denim Overall Shorts</h2>
+                        <p>$89.00</p>
+                    </li>
+                    <li class="pink-dress carousel-item">
+                        <img src="images/pink-dotted-dress.jpg">
+                        <p>DRESSES</p>
+                        <h2>Pink Dotted Dress</h2>
+                        <p>$99.00</p>
+                    </li>
+                    <li class="blue-dress carousel-item">
+                        <img src="images/blue-silk-dress.jpg">
+                        <p>DRESSES</p>
+                        <h2>Checked Stretch Dress</h2>
+                        <p>$00.00</p>
+                    </li>
+                    <li class="knit-dress carousel-item">
+                        <img src="images/stretch-knit-dress.jpg">
+                        <p>DRESSES</p>
+                        <h2>Stretch Knit Dress</h2>
+                        <p>$169.00</p>
+                    </li>
+                    <li class="shirt carousel-item">
+                        <img src="images/cotton-blue-shirt.jpg">
+                        <p>SHIRTS</p>
+                        <h2>Cotton Blue Shirt</h2>
+                        <p>$89.00</p>
+                    </li>
+                </ul>
+            </nav>
         </section>
         <section class="container subscription">
             <div class="subscription-text">
-                <h2>Sign-up for updates</h2>
+                <h2><span class="sign-text">Sign-up for </span>Updates</h2>
                 <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free
-                    style tips from our blog. Unsubscribe at any time</p>
-                <form class="form-input">
-
+                    style tips from our blog. Unsubscribe at any time.</p>
+                <form action="submit.php" method="get" class="form-input">
+                    <input type="text" name="email" />
+                    <input type="submit" name="subscribe" value="subscribe" />
                 </form>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-detail">
+        <div class="footer-detail footer-item">
             <h3>&copy; 2016 Aloha Apparel Co.<br />Powered by HTML and
-                CSS.<br /><br />604-604-6040.info@alohaaparel.com<br /><br />1490 W Broadway<br>Vancouver, BC, Canada
+                CSS.<br /><br /><a href="tel:+6046046040">604-604-6040.</a><a
+                    href="mailto:info@alohaaparel.com">info@alohaaparel.com</a><br /><br /><span
+                    class="footer-address">1490 W Broadway<br>Vancouver, BC, Canada</span>
             </h3>
         </div>
-        <nav class="footer-nav">
+        <nav class="footer-nav footer-item">
             <ul class="social-media">
-                <li><a href="#"><i class="fab fa-facebook-f fa-2x"><span>Facebook</span></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter fa-2x"><span>Twitter</span></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram fa-2x"><span>Instagram</span></i></li>
-                <li><a href="#"><i class="fab fa-pinterest fa-2x"><span>Pinterest</span></i></a></li>
-                <li><a href="#"><i class="fab fa-google fa-2x"><span>Google</span></i></a></li>
-
-
-                <!-- <li><a href="">Facebook</a></li>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Pinterest</a></li>
-                <li><a href="">Google</a></li> -->
+                <li class="facebook"><a href="#"><i class="fab fa-facebook-f"><span>Facebook</span></i></a></li>
+                <li class="twitter"><a href="#"><i class="fab fa-twitter"><span>Twitter</span></i></a></li>
+                <li class="instagram"><a href="#"><i class="fab fa-instagram"><span>Instagram</span></i></li>
+                <li class="pinterest"><a href="#"><i class="fab fa-pinterest"><span>Pinterest</span></i></a></li>
+                <li class="google"><a href="#"><i class="fab fa-google-plus-g"><span>Google</span></i></a></li>
             </ul>
         </nav>
     </footer>
