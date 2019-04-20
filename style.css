@@ -96,11 +96,11 @@
     font-style: normal;
 }
 
-/* selectors in multiple elements */
-/* :root {
-    font-size: 62.5%;
-} */
-
+/* selectors in multiple elements or universal selectors */
+html {
+    scroll-behavior: smooth;
+  }
+  
 * {
     box-sizing: border-box;
 }
@@ -113,53 +113,41 @@ img {
 .container {
     margin: 0 auto;
     width: 100%;
-    /* background-color: blue; */
 }
 
 body {
     font-family: 'Raleway', sans-serif;
 }
 
-
 /* HEADER Section */
-
 .header {
     display: flex;
     flex-wrap: wrap;
 }
 
-/* Border Line in the Header section */
-
 .logo, .icon {
-    /* border-bottom: 0.5px solid grey; */
     padding-top: 10px; 
     padding-bottom: 10px;
 }
-
 
 /* Logo in the header section */
 .logo {
     order: 1;
     width: 50%;
-    /* background-color: lightcoral; */
-    /* justify-content: flex-start; */
-    /* padding-left: 5px; */
-    /* justify-content: flex-start; */
 }
 
 .logo img {
     height: 40px;
     width: 145px;
-    /* padding-top: 10px; */
 }
 
+/* this targets the logo, icon, and nav. */
 .header-item {
     max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    /* border: 0.2px #ccc dotted; */
 }
 
 /* Nav in the header section */
@@ -168,13 +156,10 @@ body {
     width: 100%;
     border-top: 0.3px solid grey;
     text-align: center;
-    margin: 15px;
-    /* background-color: lightgreen; */
+    margin: 0;
 }
 
 .header-nav ul {
-    /* justify-content: space-around; */
-    /* background-color: lightcyan; */
     padding: 0;
 }
 
@@ -387,9 +372,10 @@ main {
 
 .carousel {
     padding: 0;
+    margin-bottom: 40px;
 }
 
-.carousel-list {
+.main-carousel {
     padding: 0;
 }
 
@@ -410,11 +396,13 @@ main {
     list-style: none;
 }
 
-.carousel-item {
+.carousel-cell {
     text-align: center;
+    width: 100%;
+    text-align: ;
 }
 
-.carousel-item p {
+.carousel-cell p {
     color: #A1A1A1;
 }
 
@@ -454,28 +442,57 @@ main {
     font-size: 1.1rem;
 }
 
-
-
-/* form section */
+/* form section  */
 
 .entire-form {
     /* background-color: red; */
-    height: 15%;
+    height: 45px;
     display: flex;
     justify-content: center;
+    /* border-radius: 50px 50px 50px 50px; */
 }
 
 .form-container {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* background-color: white; */
+    /* width: 100px; */
+    /* border-radius: 50px 50px 50px 50px; */
+    /* display: flex; */
+    position: relative;
+    width: 360px;
+    max-width: 100%;
+    outline: none;
+}
+
+input[type="text"] {
+    border: none;
+}
+
+::-webkit-input-placeholder {
+    color: #AFACAC;
+    font-weight: lighter;
 }
 
 .email-container {
-
+    padding-left: 20px;
+    border-radius: 50px;
+    width: 100%;
+    height: 46px;
 }
 
 .button-container {
-    background-color: blue;
+    background-color: #e2574c;
+    border-radius: 50px 50px 50px 50px;
+    height: 38px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 4px;
+    margin-right: 5px;
+    font-size: 0.9rem;
+    color: white;
 }
 
 
