@@ -1,13 +1,11 @@
 # Aloha Project 1
 
-A paragraph 
+## Header Section
 
--first list item
--second lsit item
-
-## My second section 
+Contains: Logo, Icon, and Navigation.
 
 
-'''
+## Main Section 
 
-'''
+
+## Footer Section

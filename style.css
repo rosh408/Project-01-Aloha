@@ -103,7 +103,7 @@ html {
 
 * {
     box-sizing: border-box;
-    font: 14px;
+    font-size: 14px;
 }
 
 img {
@@ -156,8 +156,10 @@ body {
 .header-nav {
     order: 3;
     width: 100%;
-    border-top: 1.4px solid #d7d7d7;
+    border-top: 1.5px solid #d7d7d7;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .header-nav ul {
@@ -198,17 +200,13 @@ body {
 }
 
 /* MAIN Section */
-
 main {
     width: 100%;
 }
 
 /* Banner Section */
-
 .banner {
     position: relative;
-    /* margin: 0 auto; */
-    /* height: 100vh; */
     height: 380px;
     display: flex;
     justify-content: center;
@@ -229,8 +227,6 @@ main {
     font-family: 'Raleway', sans-serif;
     font-size: 20px; /* add rem */
     text-transform: uppercase;
-    /* max-width: 100%;
-    order: 1; */
 } 
 
 .springsummer {
@@ -238,15 +234,13 @@ main {
     font-size: 35px; /* add rem */
     font-weight: normal;
     text-align: center;
-    /* max-width: 100%;
-    order: 2; */
 }
 
 /* Hand Craft Section */
 
 .hand-craft {
     text-align: center;
-    height: 250px;
+    height: 285px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -254,29 +248,31 @@ main {
 }
 
 .hand-craft h2 {
-    font-size: 2rem;
-
 }
 
 .hand-crafted-word {
     font-family: 'Playfair Display', sans-serif;
     font-style: italic;
     font-weight: normal;
+    font-size: 2.7rem;
 }
 
 .styles-word {
     font-family: 'Playfair Display', sans-serif;
-    /* font-weight: nor */
+    font-size: 2.7rem;
 }
 
 .hand-craft p {
     font-family: 'Raleway', sans-serif;
     font-weight: lighter;
+    font-size: 1.3rem;
+    margin-left: 3px;
+    margin-right: 3px;
+    line-height: 1.5em;
 }
 
 
 /* Category Section */
-
 .category-container {
     flex-wrap: wrap;
     display: flex;
@@ -294,6 +290,11 @@ main {
     color: white;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+.category-item h3:hover {
+    color: #ccc;
 }
 
 .mens-category {
@@ -396,10 +397,12 @@ main {
     font-style: italic;
     font-weight: lighter;
     color: black;
+    font-size: 2.7rem;
 }
 
 .products-text {
     font-weight: 580;
+    font-size: 2.7rem;
 }
 
 .main-carousel h2 {
@@ -422,6 +425,7 @@ main {
 
 .carousel-cell p {
     color: #969696;
+    font-size: 1.1rem;
 }
 
 /* Subscription Section */
@@ -432,6 +436,7 @@ main {
     background-repeat: no-repeat, no-repeat;
     flex-direction: column;
     align-items: center;
+    padding-top: 3.8rem;
 }
 
 .subscription-text {
@@ -444,19 +449,24 @@ main {
 
 .subscription-text h2 {
     font-family: 'Playfair Display', sans-serif;
-    font-size: 2.5rem;
 }
 
 .sign-text {
     font-style: italic;
     font-weight: normal;
+    font-size: 3rem;
+}
+
+.update-text {
+    font-size: 3rem;
 }
 
 .subscription-text p {
     font-weight: lighter;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     padding-left: 10px;
     padding-right: 10px;
+    line-height: 1.5em;
 }
 
 /* Form section  */
@@ -475,6 +485,7 @@ main {
 
 input[type="text"] {
     border: none;
+    font-size: 1.2rem;
 }
 
 ::-webkit-input-placeholder {
@@ -499,12 +510,13 @@ input[type="text"] {
     right: 0;
     margin-top: 4px;
     margin-right: 5px;
-    font-size: 0.9rem;
+    font-size: 1.08rem;
     color: white;
+    border: none;
 }
 
 .button-container:hover {
-    background-color: #b44b42;
+    background-color: #b64036;
 }
 
 /* Footer Section */
@@ -518,6 +530,7 @@ footer {
 footer a {
     color: #fff;
     text-decoration: none;
+    font-size: 1.4rem;
 }
 
 footer h3 {
@@ -529,6 +542,7 @@ footer h3 {
 
 .footer-address {
     color: #969696;
+    font-size: 1.4rem;
 }
 
 .footer-detail {
@@ -539,6 +553,10 @@ footer h3 {
 .footer-nav {
     height: 100px;
     display: flex;
+}
+
+.footer-detail h3 {
+    font-size: 1.4rem;
 }
 
 .footer-item {
@@ -554,7 +572,7 @@ footer h3 {
 
 .social-media {
     order: 2;
-    width: 33%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -603,7 +621,167 @@ footer h3 {
 
 /* Media Queries */
 
-@media (min-wdith) {
+@media (min-width: 600px) {
+    /* Header Section */
+    .header-nav {
+        margin: 0;
+    }
+
+    .logo {
+        order: 1;
+        width: 25%;
+        padding: 0;
+    }
+
+    .logo img {
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .header-nav {
+        order: 2;
+        width: 60%;
+        border: none;
+    }
+
+    .icon {
+        order: 3;
+        width: 15%;
+    }
+
+    .icon img {
+        padding-right: 0;
+        margin-right: 10px;
+    }
+
+    .header-nav li {
+        font-size: 1rem;
+    }
+    
+    .header-nav ul {
+        margin-top: 50px;
+    }
+
+    /* Categories Section (Mens, Trends, Glasses) */
+
+    .category-container {
+
+    }
+
+    .category-item {
+        border: none;
+    }
+
+    .mens-category {
+        background-image: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.22)),
+        url(images/mens-category.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        order: 1;
+        height: 25vw;
+        width: 50vw;
+        border-bottom: 4px solid white;
+        border-right: 4px solid white;
+    }
+    
+    .trends-category {
+        background-image: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.22)),
+        url(images/trends-category.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        order: 2;
+        width: 25vw;
+        height: 25vw;
+        border-left: 4px solid white;
+        border-bottom: 4px solid white;
+        border-right: 4px solid white;
+    }
+    
+    .glasses-category {
+        background-image: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.22)),
+        url(images/glasses-category.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        order: 3;
+        width: 25vw;
+        height: 25vw;
+        border-left: 4px solid white;
+        border-bottom: 4px solid white;
+    }
+    
+    .sales-category {
+        background-image: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.22)),
+        url(images/sale-category.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        order: 4;
+        width: 25vw;
+        height: 25vw;
+        border-top: 4px solid white;
+        border-right: 4px solid white;
+    }
+    
+    .bags-category {
+        background-image: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.22)),
+        url(images/bags-category.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        order: 5;
+        width: 25vw;
+        height: 25vw;
+        border-left: 4px solid white;
+        border-top: 4px solid white;
+        border-right: 4px solid white;
+    }
+    
+    .womens-category {
+        background-image: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.22)),
+        url(images/womens-category.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        order: 6;
+        height: 25vw;
+        width: 50vw;
+        border-left: 4px solid white;
+        border-top: 4px solid white;
+    }
+
+    .
+    /* .mens-category {
+        width: 60vw;
+        height: 50vw;
+    }
+
+    .trends-category {
+        width: 20vw;
+        height: 50vw;
+    }
+
+    .glasses-category {
+        width: 20vw;
+        height: 50vw;
+    }
+
+    .sales-category {
+        width: 20vw;
+        height: 50vw;
+    }
+
+    .bags-category {
+        width: 20vw;
+        height: 50vw;
+    }
+
+    .womens-category {
+        width: 60vw;
+        height: 50vw;
+    } */
 
 }
 
