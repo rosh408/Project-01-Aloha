@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function(){
 
 //All of your code goes under
 console.log('this is working');
@@ -11,3 +11,4 @@ var flkty = new Flickity( '.main-carousel', {
   });
 
 }); //end of doc ready
+

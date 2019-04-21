@@ -171,7 +171,7 @@ body {
     list-style: none;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    font-size: 13px; /* add rem */
+    font-size: 13px;
     flex: 1;
     display: inline-block;
 }
@@ -245,9 +245,6 @@ main {
     justify-content: center;
     flex-direction: column;
 
-}
-
-.hand-craft h2 {
 }
 
 .hand-crafted-word {
@@ -420,7 +417,6 @@ main {
 .carousel-cell {
     text-align: center;
     width: 100%;
-    text-align: ;
 }
 
 .carousel-cell p {
@@ -615,12 +611,8 @@ footer h3 {
     display: none;
 }
 
-.social-icon {
-    display: none;
-}
 
 /* Media Queries */
-
 @media (min-width: 600px) {
     /* Header Section */
     .header-nav {
@@ -663,11 +655,6 @@ footer h3 {
     }
 
     /* Categories Section (Mens, Trends, Glasses) */
-
-    .category-container {
-
-    }
-
     .category-item {
         border: none;
     }
@@ -752,37 +739,66 @@ footer h3 {
         border-top: 4px solid white;
     }
 
-    .
-    /* .mens-category {
-        width: 60vw;
-        height: 50vw;
+    /* Carousel Section  */
+
+    /* Footer Section  */
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    .trends-category {
-        width: 20vw;
-        height: 50vw;
+    .footer-item {
+        justify-content: space-between;
     }
 
-    .glasses-category {
-        width: 20vw;
+    .footer-detail {
+        width: 70vw;
         height: 50vw;
+        order: 1;
+        margin-top: 5rem;
+        align-items: flex-start;
     }
 
-    .sales-category {
-        width: 20vw;
-        height: 50vw;
+    .footer-detail h3 {
+        text-align: left;
+        margin-left: 1.3rem;
     }
 
-    .bags-category {
-        width: 20vw;
+    .footer-nav {
+        width: 30vw;
         height: 50vw;
+        order: 2;
+        margin-top: 2rem;
     }
 
-    .womens-category {
-        width: 60vw;
-        height: 50vw;
-    } */
+    .social-media {
+        flex-direction: column;
+        display: flex;
+        margin: 0;
+    }
 
+    .social-media a {
+        flex-direction: row;
+        display: flex;
+    }
+
+    .fab {
+        display: flex;
+        order: 1;
+    }
+
+    .social-media span {
+        font-family: 'Raleway', sans-serif;
+        padding-left: 1.1rem;
+        display: inherit;
+        order: 2;
+    }
+
+    .fa-lg {
+        font-size: 1.3rem;
+    }
+    
 }
 
 
