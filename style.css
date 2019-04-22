@@ -517,7 +517,7 @@ input[type="text"] {
 /* Footer Section */
 .about {
     background-color: #242424;
-    height: 50vw;
+    height: 300px;
     border-top: 6px solid white;
     bottom: 0px;
 }
@@ -612,9 +612,11 @@ footer h3 {
     display: none;
 }
 
-
 /* Media Queries */
 @media (min-width: 600px) {
+    /* * {
+        border: 1px solid red;
+    } */
     /* Header Section */
     .header-nav {
         margin: 0;
@@ -750,14 +752,11 @@ footer h3 {
     }
 
     /* Footer Section  */
-
     .about {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        height: 40%;
-        bottom: 0px;
-        border: 3px solid red;
+        height: 380px;
     }
 
     .footer-item {
@@ -766,20 +765,20 @@ footer h3 {
 
     .footer-detail {
         width: 70vw;
-        height: 50vw;
+        height: 50px;
         order: 1;
         margin-top: 5rem;
         align-items: flex-start;
+        margin-left: 4rem;
     }
 
     .footer-detail h3 {
         text-align: left;
-        margin-left: 1.3rem;
     }
 
     .footer-nav {
         width: 30vw;
-        height: 50vw;
+        height: 280px;
         order: 2;
         margin-top: 2rem;
     }
@@ -788,21 +787,15 @@ footer h3 {
         flex-direction: column;
         display: flex;
         margin: 0;
-        align-items: baseline;
-        justify-content: space-evenly;
     }
 
     .social-media li {
         flex-direction: column;
-        flex-basis: 5px;
-        flex-grow: 2px;
-        align-items: baseline;
+
     }
     .social-media a {
         flex-direction: row;
         display: flex;
-        flex-basis: 5px;
-        flex-grow: 0.2;
     }
 
     .fab {
@@ -815,7 +808,7 @@ footer h3 {
         padding-left: 1.1rem;
         display: inherit;
         order: 2;
-
+        font-size: 1.3rem;
     }
 
     .fa-lg {
@@ -839,7 +832,6 @@ footer h3 {
 
     .header-nav {
         width: 35%;
-        margin-right: 12rem;
     }
 
     .header-nav a {
@@ -847,7 +839,7 @@ footer h3 {
     }
 
     .icon {
-        width: 25%:
+        width: 25%;
     }
 
     .icon img {
@@ -886,15 +878,19 @@ footer h3 {
 
     /* Footer Section  */
     .about {
-        height: 40%:
+        height: 380px;
+    }
+
+    .footer-detail {
+        margin-left: 5rem;
     }
 
     .footer-nav {
-        height: 50vw:
+        height: 280px;
     }
 
     .social-media {
-        height: 50vw;
+        margin-left: 4.5rem;
     }
 }
 
