@@ -12,6 +12,10 @@ Used flex properties to spread out the header items. What I found really helpful
 
 Contains: Banner, Hand-Crafted Styles Text, Categories, Carousel, and Subscription News letter.
 
+Used background image properties for my banner. 
 
+Used  =
 
 ## Footer Section
+
+had a hard time with the social media navigation expanding but i got it to work eventually through using PX instead of REM
