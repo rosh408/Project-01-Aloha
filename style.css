@@ -119,6 +119,7 @@ img {
 body {
     font-family: 'Raleway', sans-serif;
     color: #2d2d2d;
+    height: 100%;
 }
 
 /* HEADER Section */
@@ -268,7 +269,6 @@ main {
     line-height: 1.5em;
 }
 
-
 /* Category Section */
 .category-container {
     flex-wrap: wrap;
@@ -291,7 +291,7 @@ main {
 }
 
 .category-item h3:hover {
-    color: #ccc;
+    color: #f5ebc6;
 }
 
 .mens-category {
@@ -371,7 +371,6 @@ main {
 }
 
 /* Slide Section */
-
 .carousel {
     height: 500px;
     padding: 0;
@@ -516,17 +515,21 @@ input[type="text"] {
 }
 
 /* Footer Section */
-footer {
+.about {
     background-color: #242424;
-    width: 100%;
-    height: auto;
+    height: 50vw;
     border-top: 6px solid white;
+    bottom: 0px;
 }
 
 footer a {
     color: #fff;
     text-decoration: none;
     font-size: 1.4rem;
+}
+
+footer h3 a:hover {
+     color: #b64036;
 }
 
 footer h3 {
@@ -547,7 +550,6 @@ footer h3 {
 }
 
 .footer-nav {
-    height: 100px;
     display: flex;
 }
 
@@ -575,7 +577,6 @@ footer h3 {
     text-align: center;
     padding: 0;
     margin: 15px;
-    flex-wrap: wrap;
 }
 
 .social-media a:hover {
@@ -740,12 +741,23 @@ footer h3 {
     }
 
     /* Carousel Section  */
+    .carousel-cell {
+       width: 50vw;
+    }
+
+    .carousel-cell h2 {
+        font-size: 1.7rem;
+    }
 
     /* Footer Section  */
+
     .about {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        height: 40%;
+        bottom: 0px;
+        border: 3px solid red;
     }
 
     .footer-item {
@@ -776,11 +788,21 @@ footer h3 {
         flex-direction: column;
         display: flex;
         margin: 0;
+        align-items: baseline;
+        justify-content: space-evenly;
     }
 
+    .social-media li {
+        flex-direction: column;
+        flex-basis: 5px;
+        flex-grow: 2px;
+        align-items: baseline;
+    }
     .social-media a {
         flex-direction: row;
         display: flex;
+        flex-basis: 5px;
+        flex-grow: 0.2;
     }
 
     .fab {
@@ -793,12 +815,87 @@ footer h3 {
         padding-left: 1.1rem;
         display: inherit;
         order: 2;
+
     }
 
     .fa-lg {
         font-size: 1.3rem;
     }
-    
+}
+
+@media (min-width: 1240px) {
+    /* Header Section */
+    .header {
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 30% 
+    }
+
+    .logo img {
+        margin-left: 2rem;
+    }
+
+    .header-nav {
+        width: 35%;
+        margin-right: 12rem;
+    }
+
+    .header-nav a {
+        font-size: 1.3rem;
+    }
+
+    .icon {
+        width: 25%:
+    }
+
+    .icon img {
+        margin-right: 2rem;
+    }
+
+    /* Banner Section  */
+    .banner {
+        position: relative;
+        height: 400px;
+        background-image: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.22)),
+        url(images/banner-girl.png), url(images/flower-bkgd.jpg);
+        background-position: center, center 40px, center;
+        background-repeat: no-repeat, no-repeat, repeat-x;
+        background-size: cover, 14rem 33rem, contain;
+    }
+
+    /* Hand-Crafted Styles Section  */
+    .hand-craft p {
+        margin-left: 20rem;
+        margin-right: 20rem;
+        line-height: 2.5rem;
+    }
+
+    /* Carousel Section  */
+    .carousel-cell {
+        width: 25vw;
+    }
+
+    /* Subscription Section  */
+    .subscription-text p {
+        margin-left: 26rem;
+        margin-right: 26rem;
+        line-height: 2rem;
+    }
+
+    /* Footer Section  */
+    .about {
+        height: 40%:
+    }
+
+    .footer-nav {
+        height: 50vw:
+    }
+
+    .social-media {
+        height: 50vw;
+    }
 }
 
 
