@@ -1,5 +1,4 @@
 /* Font Faces */
-
 @font-face {
     font-family: 'Raleway';
     src: url('fonts/Raleway-Medium.eot');
@@ -97,6 +96,35 @@
 }
 
 /* selectors in multiple elements or universal selectors */
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+ }
+
+.screen-reader-text:focus {
+    clip: auto !important;
+    display: block;
+    height: 3rem;
+    left: 10px;
+    top: 5px;
+    width: 10rem;
+    background: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 0.8rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    color: #e2574c;
+    outline: 0;
+    box-shadow: 0 2px 1px 0 #8b8b8b;
+    border-radius: 2px 2px 2px 2px;
+    z-index: 100000; /* above all content */
+ }
+
 html {
     scroll-behavior: smooth;
 }

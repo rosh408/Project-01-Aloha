@@ -19,6 +19,7 @@
 <body>
     <!-- Header Section -->
     <header class="container header">
+        <a class="screen-reader-text" href="#main">Skip to content</a>
         <div class="logo header-item">
             <img src="images/aloha-logo.svg">
         </div>
@@ -39,11 +40,11 @@
     <main>
         <section class="banner">
             <div class="banner-text">
-                <h2 class="new-collection">New Collection</h2>
+                <h1 class="new-collection">New Collection</h1>
                 <h3 class="springsummer">Spring/Summer 2016</h3>
             </div>
         </section>
-        <section class="container hand-craft">
+        <section id="main" tabindex="-1" class="container hand-craft">
             <h2><span class="hand-crafted-word">Hand-Crafted</span><span class="styles-word"> Styles</span></h2>
             <p>Aloha Apparel CO. sells only the finest ready-to-travel clothing. Browse our current selection of
                 products or sign up for updates below.</p>
@@ -120,14 +121,13 @@
                 </div>
             </div>
         </section>
-        <section id="updates" class="updates container subscription">
+        <section id="updates " class="updates container subscription">
             <div class="subscription-text">
                 <h2><span class="sign-text">Sign-up for </span><span class="update-text">Updates</span></h2>
                 <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free
                     style tips from our blog. Unsubscribe at any time.</p>
             </div>
-
-            <div class="entire-form">
+            <div id="subscribe-form" class="entire-form">
                 <form class="form-container">
                     <input type="text" name="email" placeholder="Your Email" class="email-container" id="email-container"/>
                     <input type="submit" name="subscribe" value="Subscribe" class="button-container" />
@@ -140,7 +140,7 @@
     <footer id="about" class="about">
         <div class="footer-detail footer-item">
             <h3>&copy; 2016 Aloha Apparel Co.<br />Powered by HTML and
-                CSS.<br /><br /><a href="tel:+6046046040">604-604-6040.</a><a
+                CSS.<br /><br /><a href="tel:+6046046040">604-604-6040.</a><a id="subscribe-form"
                     href="mailto:info@alohaaparel.com">info@alohaaparel.com</a><br /><br /><span
                     class="footer-address">1490 W Broadway<br>Vancouver, BC, Canada</span>
             </h3>
@@ -185,8 +185,9 @@
 
             </ul>
         </nav>
+        <script src="js/tota11y.js"></script>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-        <script src="./main.js"></script>
+        <script src="./js/main.js"></script>
     </footer>
 </body>
 
