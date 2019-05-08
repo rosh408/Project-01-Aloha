@@ -21,7 +21,7 @@
     <header class="container header">
         <a class="screen-reader-text" href="#main">Skip to content</a>
         <div class="logo header-item">
-            <img src="images/aloha-logo.svg">
+            <img src="images/aloha-logo.svg" alt="aloha logo">
         </div>
         <nav class="header-nav">
             <ul class="header-item">
@@ -32,7 +32,7 @@
             </ul>
         </nav>
         <div class="icon header-item">
-            <a href="#"><img src="images/cart-icon.svg"></a>
+            <a href="#"><img src="images/cart-icon.svg" alt="cart icon"></a>
         </div>
     </header>
 
@@ -41,7 +41,8 @@
         <section class="banner">
             <div class="banner-text">
                 <h1 class="new-collection">New Collection</h1>
-                <h3 class="springsummer">Spring/Summer 2016</h3>
+                <!-- change h3 to h2, be consistent with headings  -->
+                <h2 class="springsummer">Spring/Summer 2016</h2>
             </div>
         </section>
         <section id="main" tabindex="-1" class="container hand-craft">
@@ -78,43 +79,43 @@
 
             <div class="main-carousel">
                 <div class="carousel-cell">
-                    <img src="images/checked-stretch-dress.jpg">
+                    <img src="images/checked-stretch-dress.jpg" alt="image of checked dress">
                     <p>DRESSES</p>
                     <h2>Checked Stretch Dress</h2>
                     <p>$129.00</p>
                 </div>
                 <div class="carousel-cell">
-                    <img src="images/blue-hipster-backpack.jpg">
+                    <img src="images/blue-hipster-backpack.jpg" alt="image of a blue hipster backpack">
                     <p>BAGS</p>
                     <h2>Blue Hipster Backpack</h2>
                     <p>$69.00</p>
                 </div>
                 <div class="carousel-cell">
-                    <img src="images/demin-overall-shorts.jpg">
+                    <img src="images/demin-overall-shorts.jpg" alt="image of a denim overall shorts">
                     <p>DENIM</p>
                     <h2>Denim Overall Shorts</h2>
                     <p>$89.00</p>
                 </div>
                 <div class="carousel-cell">
-                    <img src="images/pink-dotted-dress.jpg">
+                    <img src="images/pink-dotted-dress.jpg" alt="image of a pink dotted dress">
                     <p>DRESSES</p>
                     <h2>Pink Dotted Dress</h2>
                     <p>$99.00</p>
                 </div>
                 <div class="carousel-cell">
-                    <img src="images/blue-silk-dress.jpg">
+                    <img src="images/blue-silk-dress.jpg" alt="image of a blue silk dress">
                     <p>DRESSES</p>
                     <h2>Blue Silk Dress</h2>
                     <p>$89.00</p>
                 </div>
                 <div class="carousel-cell">
-                    <img src="images/stretch-knit-dress.jpg">
+                    <img src="images/stretch-knit-dress.jpg" alt=" image of a stretch knit dress">
                     <p>DRESSES</p>
                     <h2>Stretch Knit Dress</h2>
                     <p>$169.00</p>
                 </div>
                 <div class="carousel-cell">
-                    <img src="images/cotton-blue-shirt.jpg">
+                    <img src="images/cotton-blue-shirt.jpg" alt="image of a cotton blue shirt">
                     <p>SHIRTS</p>
                     <h2>Cotton Blue Shirt</h2>
                     <p>$39.00</p>
@@ -129,8 +130,10 @@
             </div>
             <div id="subscribe-form" class="entire-form">
                 <form class="form-container">
-                    <input type="text" name="email" placeholder="Your Email" class="email-container" id="email-container"/>
-                    <input type="submit" name="subscribe" value="Subscribe" class="button-container" />
+                    <!-- add label for email -->
+                    <label for ="email">
+                    <input type="text" id="email" placeholder="Your Email" class="email-container" /></label>
+                    <input type="submit" name="subscribe" value="Subscribe" class="button-container" /> 
                 </form>
             </div>
         </section>
