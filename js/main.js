@@ -9,17 +9,17 @@ document.addEventListener("DOMContentLoaded", function() {
     .getElementById("subscribe-form")
     .addEventListener("submit", function(e) {
       e.preventDefault();
-      const emailInsert = document.getElementById("email-container");
-      const emailInput = emailInsert.value;
+      const emailInput = document.getElementById("email-container");
+      const emailValue = emailInput.value;
       function validateEmail() {
-        return emailInput.toLowerCase();
+        return emailValue.toLowerCase();
       }
       if (
-        emailInput === validateEmail() &&
-        emailInput.includes("@") &&
-        emailInput.includes(".com")
+        emailValue === validateEmail() &&
+        emailValue.includes("@") &&
+        emailValue.includes(".com")
       ) {
-        emailInsert.value = "";
+        emailInput.value = "";
         setTimeout(function() {
           alert("Thank you for subscribing!");
         }, 250);
