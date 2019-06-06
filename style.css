@@ -96,7 +96,6 @@
 }
 
 /* selectors in multiple elements or universal selectors */
-
 .screen-reader-text {
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute !important;
@@ -273,7 +272,6 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: column;
-
 }
 
 .hand-crafted-word {
@@ -642,9 +640,6 @@ footer h3 {
 
 /* Media Queries */
 @media (min-width: 600px) {
-    /* * {
-        border: 1px solid red;
-    } */
     /* Header Section */
     .header-nav {
         margin: 0;

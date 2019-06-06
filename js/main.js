@@ -4,10 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     contain: true,
     freeScroll: true
   });
-
-  document
-    .getElementById("subscribe-form")
-    .addEventListener("submit", function(e) {
+  document.getElementById("subscribe-form").addEventListener("submit", function(e) {
       e.preventDefault();
       const emailInput = document.getElementById("email-container");
       const emailValue = emailInput.value;
